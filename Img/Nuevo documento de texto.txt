@@ -1,0 +1,50 @@
+/* Agrega estilos para los botones de navegación */
+.skills-nav {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.skills-nav button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.skills-nav button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+Estilos para el carrusel
+.skills-list {
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-card {
+  display: none;
+  width: 300px; /* Tamaño fijo para las tarjetas */
+  height: 200px; /* Altura fija para las tarjetas */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.skill-card img {
+  width: 100%; /* Las imágenes ocupan el 100% del ancho de la tarjeta */
+  height: 100%; /* Las imágenes ocupan el 100% de la altura de la tarjeta */
+  object-fit: cover; /* La imagen se ajusta manteniendo la relación de aspecto y cubriendo el área */
+}
+
+/* Mostrar la tarjeta actual */
+.skill-card.active {
+  display: block;
+  opacity: 1;
+}

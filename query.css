@@ -1,0 +1,96 @@
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 772px) {
+  #hero h2 {
+    margin-bottom: 55px;
+  }
+
+  .skills-bar {
+    flex-wrap: wrap; /* Permitir que las habilidades se envuelvan en varias líneas si es necesario */
+    justify-content: center; /* Centrar las habilidades horizontalmente */
+  }
+
+  .skill-item {
+    max-width: calc(
+      50% - 20px
+    ); /* Ajustar el ancho máximo de cada tarjeta para que quepan dos por fila */
+    margin: 10px; /* Espacio entre las tarjetas de habilidades */
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 30px;
+    justify-content: center;
+    align-content: flex-start;
+  }
+
+  #contact h2 {
+    padding: 10px;
+  }
+
+  .project-card {
+    width: 200px;
+    height: 220px;
+  }
+
+  .project-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .project-description {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .btn-github,
+  .btn-website {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
+/* Estilos para la sección de Portfolio */
+
+@media screen and (max-width: 992px) {
+  #hero h2 {
+    margin-bottom: 55px;
+  }
+
+  .navbar {
+    display: none;
+  }
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skill-card {
+    width: 45%;
+    margin: 10px;
+  }
+}
+
+/* Media queries para pantallas pequeñas */
+@media screen and (max-width: 576px) {
+  #hero h2 {
+    margin-bottom: 55px;
+  }
+
+  .navbar {
+    display: none;
+  }
+  .skill-card {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-icons {
+    flex-direction: row;
+  }
+
+  .contact-icon {
+    margin: 10px 0;
+  }
+}
