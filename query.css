@@ -76,8 +76,13 @@
   #hero h2 {
     margin-bottom: 55px;
   }
-
   .navbar {
+    display: block;
+  }
+  .navbar .container {
+    justify-content: center;
+  }
+  .nav-links {
     display: none;
   }
   .skill-card {
